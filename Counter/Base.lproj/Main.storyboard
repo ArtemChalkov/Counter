@@ -26,35 +26,84 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85G-XC-8jK">
-                                <rect key="frame" x="159" y="687" width="75" height="35"/>
+                                <rect key="frame" x="96" y="661" width="75" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.35184022609999999" blue="0.36264288900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="NrQ-XS-yH6"/>
+                                    <constraint firstAttribute="width" constant="75" id="e92-hj-ynX"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
                                 <connections>
-                                    <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wsw-Lb-wwp"/>
+                                    <action selector="countButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qnb-55-B20"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdQ-x7-0bg">
+                                <rect key="frame" x="250" y="661" width="73" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="OVh-ku-w90"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="itE-xh-gm4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                <connections>
+                                    <action selector="countButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWY-Le-Ugq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O8-pw-NgP">
+                                <rect key="frame" x="140" y="763" width="113" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Обнуление"/>
+                                <connections>
+                                    <action selector="countButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9U-YN-2E1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hvg-Bq-dD8">
+                                <rect key="frame" x="83" y="89" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5s1-K0-Tzq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EjQ-sL-maB"/>
-                            <constraint firstItem="5s1-K0-Tzq" firstAttribute="centerX" secondItem="85G-XC-8jK" secondAttribute="centerX" id="RL9-ch-PO8"/>
-                            <constraint firstItem="85G-XC-8jK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-96" id="X0k-ln-Boz"/>
-                            <constraint firstItem="5s1-K0-Tzq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="rWF-Nk-jpW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RdQ-x7-0bg" secondAttribute="trailing" constant="70" id="3Wg-Og-g6K"/>
+                            <constraint firstItem="5s1-K0-Tzq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="FRI-JE-YzJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RdQ-x7-0bg" secondAttribute="bottom" constant="122" id="REl-Ho-jSG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="85G-XC-8jK" secondAttribute="bottom" constant="122" id="cjU-KF-SJQ"/>
+                            <constraint firstItem="5s1-K0-Tzq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uAl-iB-e3s"/>
+                            <constraint firstItem="85G-XC-8jK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="wNe-TX-O8a"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="5s1-K0-Tzq" id="WaC-f8-44r"/>
+                        <outlet property="countLabel" destination="5s1-K0-Tzq" id="w9x-gr-kbN"/>
+                        <outlet property="historyTextView" destination="Hvg-Bq-dD8" id="Mpx-Jp-XZa"/>
+                        <outlet property="minusButton" destination="RdQ-x7-0bg" id="ZHk-Qg-1WZ"/>
+                        <outlet property="nulButton" destination="6O8-pw-NgP" id="bWC-NZ-3lq"/>
+                        <outlet property="plusButton" destination="85G-XC-8jK" id="B2i-vN-hJB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-985" y="-279"/>
+            <point key="canvasLocation" x="-962.59541984732823" y="-321.12676056338029"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
